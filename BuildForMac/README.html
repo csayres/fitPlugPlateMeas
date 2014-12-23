@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+	<title>BuildForMac README</title>
+</head>
+<body>
+<h2>BuildForMac README</h2>
+
+<p>To build a Mac OS X application:<pre>
+% python setup.py [--quiet] py2app
+</pre>
+
+<p>Notes:
+<ul>
+	<li>Requires
+	<ul>
+	    <li>py2app, available from <a href="http://pythonmac.org/packages/">http://pythonmac.org/packages/</a>.
+	    <li><a href="http://pypi.python.org/pypi?:action=display&amp;name=RO">RO Package</a>
+	    <li><a href="http://www.scipy.org/">scipy</a>
+	    <li><a href="http://numpy.scipy.org/">numpy</a>
+	</ul>
+	<li>Edit extraPaths.txt to point to any packages you have downloaded but not installed (RO Package may fall into this category for some users). Make it blank or delete it if there are no such packages.
+	<li>If you install your own Python then it will be included in the package, which makes it more portable. See <a href="http://www.python.org/download/download_mac.html">Python on the Macintosh</a> for information.
+</ul>
+
+</body>
+</html>
